@@ -151,281 +151,52 @@ print("\nCleaned dataset saved as IPL_Matches_Cleaned.csv")
 
 
   # Output
- ```
+<img width="585" height="597" alt="image" src="https://github.com/user-attachments/assets/b3d5a1a6-582a-4aa7-979d-62e24a983a02" />
 
-Q1. DATASET UNDERSTANDING
-Rows: 1095
-Columns: 20
-       id   season        city        date match_type player_of_match  \
-0  335982  2007/08   Bangalore  2008-04-18     League     BB McCullum   
-1  335983  2007/08  Chandigarh  2008-04-19     League      MEK Hussey   
-2  335984  2007/08       Delhi  2008-04-19     League     MF Maharoof   
-3  335985  2007/08      Mumbai  2008-04-20     League      MV Boucher   
-4  335986  2007/08     Kolkata  2008-04-20     League       DJ Hussey   
 
-                                        venue                        team1  \
-0                       M Chinnaswamy Stadium  Royal Challengers Bangalore   
-1  Punjab Cricket Association Stadium, Mohali              Kings XI Punjab   
-2                            Feroz Shah Kotla             Delhi Daredevils   
-3                            Wankhede Stadium               Mumbai Indians   
-4                                Eden Gardens        Kolkata Knight Riders   
 
-                         team2                  toss_winner toss_decision  \
-0        Kolkata Knight Riders  Royal Challengers Bangalore         field   
-1          Chennai Super Kings          Chennai Super Kings           bat   
-2             Rajasthan Royals             Rajasthan Royals           bat   
-3  Royal Challengers Bangalore               Mumbai Indians           bat   
-4              Deccan Chargers              Deccan Chargers           bat   
+<img width="282" height="355" alt="image" src="https://github.com/user-attachments/assets/66151851-dbac-4090-8e03-c577a63cd8dc" />
 
-                        winner   result  result_margin  target_runs  \
-0        Kolkata Knight Riders     runs          140.0        223.0   
-1          Chennai Super Kings     runs           33.0        241.0   
-2             Delhi Daredevils  wickets            9.0        130.0   
-3  Royal Challengers Bangalore  wickets            5.0        166.0   
-4        Kolkata Knight Riders  wickets            5.0        111.0   
 
-   target_overs super_over method    umpire1         umpire2  
-0          20.0          N    NaN  Asad Rauf     RE Koertzen  
-1          20.0          N    NaN  MR Benson      SL Shastri  
-2          20.0          N    NaN  Aleem Dar  GA Pratapkumar  
-3          20.0          N    NaN   SJ Davis       DJ Harper  
-4          20.0          N    NaN  BF Bowden     K Hariharan
-```
 
-```
+<img width="308" height="222" alt="image" src="https://github.com/user-attachments/assets/b7659d38-6270-47f4-80c9-aefd427b3a12" />
 
-Q2. COLUMNS AND DATA TYPES
-id                   int64
-season              object
-city                object
-date                object
-match_type          object
-player_of_match     object
-venue               object
-team1               object
-team2               object
-toss_winner         object
-toss_decision       object
-winner              object
-result              object
-result_margin      float64
-target_runs        float64
-target_overs       float64
-super_over          object
-method              object
-umpire1             object
-umpire2             object
-dtype: object
-```
-```
 
-Q4. DATA CLEANING
-Missing values:
-city                 51
-player_of_match       5
-winner                5
-result_margin        19
-target_runs           3
-target_overs          3
-method             1074
-dtype: int64
-Duplicate records before cleaning: 0
-Missing city values after cleaning: 0
-Duplicate records after cleaning: 0
-```
-```
 
-Q5. SEASON ANALYSIS
-season
-2007/08    58
-2009       57
-2009/10    60
-2011       73
-2012       74
-2013       76
-2014       60
-2015       59
-2016       60
-2017       59
-2018       60
-2019       60
-2020/21    60
-2021       60
-2022       74
-2023       74
-2024       71
-dtype: int64
-Season with most matches: 2013
-Highest number of matches: 76
-```
-```
+<img width="286" height="361" alt="image" src="https://github.com/user-attachments/assets/fb8c0da0-3cd6-4c8f-9624-725f554c75f9" />
 
-Q6. TOP 5 WINNING TEAMS
-winner
-Mumbai Indians                 144
-Chennai Super Kings            138
-Kolkata Knight Riders          131
-Royal Challengers Bangalore    116
-Rajasthan Royals               112
-dtype: int64
-```
-```
 
-Q7. CSK MATCHES
-     season                        team1                  team2  \
-1   2007/08              Kings XI Punjab    Chennai Super Kings   
-7   2007/08          Chennai Super Kings         Mumbai Indians   
-11  2007/08          Chennai Super Kings  Kolkata Knight Riders   
-14  2007/08  Royal Challengers Bangalore    Chennai Super Kings   
-27  2007/08             Delhi Daredevils    Chennai Super Kings   
-30  2007/08          Chennai Super Kings        Kings XI Punjab   
-41  2007/08        Kolkata Knight Riders    Chennai Super Kings   
-52  2007/08              Deccan Chargers    Chennai Super Kings   
-56  2007/08          Chennai Super Kings        Kings XI Punjab   
-62     2009  Royal Challengers Bangalore    Chennai Super Kings   
 
-                 winner  
-1   Chennai Super Kings  
-7   Chennai Super Kings  
-11  Chennai Super Kings  
-14  Chennai Super Kings  
-27  Chennai Super Kings  
-30  Chennai Super Kings  
-41  Chennai Super Kings  
-52  Chennai Super Kings  
-56  Chennai Super Kings  
-62  Chennai Super Kings  
-Total CSK wins: 138
-```
-```
+<img width="272" height="140" alt="image" src="https://github.com/user-attachments/assets/e388daf5-ba02-4fcc-abfd-3b49e0343862" />
 
-Q8. TOSS DECISION ANALYSIS
-Frequency:
-toss_decision
-field    704
-bat      391
-Name: count, dtype: int64
-Percentage:
-toss_decision
-field    64.29
-bat      35.71
-Name: proportion, dtype: float64
-Most preferred: field
-```
-```
 
-Q9. SEASON-WISE TOSS ANALYSIS
-toss_decision  bat  field
-season                   
-2007/08         26     32
-2009            35     22
-2009/10         39     21
-2011            25     48
-2012            37     37
-2013            45     31
-2014            19     41
-2015            25     34
-2016            11     49
-2017            11     48
-2018            10     50
-2019            10     50
-2020/21         27     33
-2021            16     44
-2022            15     59
-2023            21     53
-2024            19     52
-Most preferred decision by season:
-season
-2007/08    field
-2009         bat
-2009/10      bat
-2011       field
-2012         bat
-2013         bat
-2014       field
-2015       field
-2016       field
-2017       field
-2018       field
-2019       field
-2020/21    field
-2021       field
-2022       field
-2023       field
-2024       field
-dtype: object
-```
-```
 
-Q10. TOP 5 VENUES
-venue
-Eden Gardens                                 77
-Wankhede Stadium                             73
-M Chinnaswamy Stadium                        65
-Feroz Shah Kotla                             60
-Rajiv Gandhi International Stadium, Uppal    49
-dtype: int64
-```
-```
+<img width="458" height="407" alt="image" src="https://github.com/user-attachments/assets/54bc8fe8-387e-472e-95fc-8994207338ff" />
 
-Q11. WINNING MARGIN ANALYSIS
-Largest winning margin: 146.0
-season                       2017
-team1            Delhi Daredevils
-team2              Mumbai Indians
-winner             Mumbai Indians
-result                       runs
-result_margin               146.0
-Name: 620, dtype: object
 
-Top 10 winning margins:
- season                       team1                       team2                      winner  result_margin
-   2017            Delhi Daredevils              Mumbai Indians              Mumbai Indians          146.0
-   2016 Royal Challengers Bangalore               Gujarat Lions Royal Challengers Bangalore          144.0
-2007/08 Royal Challengers Bangalore       Kolkata Knight Riders       Kolkata Knight Riders          140.0
-   2015 Royal Challengers Bangalore             Kings XI Punjab Royal Challengers Bangalore          138.0
-   2013 Royal Challengers Bangalore               Pune Warriors Royal Challengers Bangalore          130.0
-   2019         Sunrisers Hyderabad Royal Challengers Bangalore         Sunrisers Hyderabad          118.0
-   2023 Royal Challengers Bangalore            Rajasthan Royals Royal Challengers Bangalore          112.0
-   2011             Kings XI Punjab Royal Challengers Bangalore             Kings XI Punjab          111.0
-   2024       Kolkata Knight Riders              Delhi Capitals       Kolkata Knight Riders          106.0
-2007/08            Delhi Daredevils            Rajasthan Royals            Rajasthan Royals          105.0
-```
-```
 
-Q12. MATCH RESULT ANALYSIS
-result
-wickets      578
-runs         498
-tie           14
-no result      5
-Name: count, dtype: int64
-```
-```
+<img width="293" height="202" alt="image" src="https://github.com/user-attachments/assets/53e552d9-c9e0-448f-aed2-731a463ce118" />
 
-Q13. DATETIME CONVERSION
-Before conversion: object
-After conversion: datetime64[ns]
-```
-```
 
-Q14. YEAR EXTRACTION
-      date  year
-2008-04-18  2008
-2008-04-19  2008
-2008-04-19  2008
-2008-04-20  2008
-2008-04-20  2008
-2008-04-21  2008
-2008-04-22  2008
-2008-04-23  2008
-2008-04-24  2008
-2008-04-25  2008
-```
 
-```
-Cleaned dataset saved as IPL_Matches_Cleaned.csv
-```
+<img width="397" height="638" alt="image" src="https://github.com/user-attachments/assets/d5f8c494-07a0-49e9-ad2d-a47433efb304" />
+
+
+
+<img width="372" height="135" alt="image" src="https://github.com/user-attachments/assets/1c68faff-062f-4f5f-8c27-b98c797356cb" />
+
+
+
+<img width="765" height="366" alt="image" src="https://github.com/user-attachments/assets/3be4a6ca-0153-400a-8967-0fa65568db84" />
+
+
+
+<img width="236" height="122" alt="image" src="https://github.com/user-attachments/assets/acb299cf-59f4-4e46-9192-9503587397cf" />
+
+
+
+<img width="216" height="205" alt="image" src="https://github.com/user-attachments/assets/f2cb2f59-35f5-4738-af0c-ec207f129843" />
+
 
 
  # Result:
