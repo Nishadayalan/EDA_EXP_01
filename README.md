@@ -1,10 +1,12 @@
-**#Experiment 1: EDA in IPL Dataset**
+# Experiment 1: EDA in IPL Dataset
+
 ## Name : Nisha D
 ## Reg No. : 212223230143
-**Aim:**
+
+# Aim:
 To perform Exploratory Data Analysis (EDA) on the IPL matches dataset and derive insights about matches per season, winning teams, toss decisions, and top venues.
 
-**Algorithm / Procedure:**
+# Algorithm / Procedure:
 
 **1.Import Libraries**
   Import pandas for data handling.
