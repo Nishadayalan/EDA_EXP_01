@@ -35,7 +35,7 @@ To perform Exploratory Data Analysis (EDA) on the IPL matches dataset and derive
   Observe patterns in toss decisions.
   Identify teams with consistent winning trends.
   
-  **Program**
+  # Program 
 ```
 import pandas as pd
 # Load the IPL dataset
@@ -148,7 +148,7 @@ print("\nCleaned dataset saved as IPL_Matches_Cleaned.csv")
 
 
 
-  **Output**
+  # Output
  ```
 
 Q1. DATASET UNDERSTANDING
@@ -422,11 +422,11 @@ Q14. YEAR EXTRACTION
 ```
 
 ```
-
 Cleaned dataset saved as IPL_Matches_Cleaned.csv
 ```
 
 
- ** Result**
+ # Result:
+ 
   This experiment is executed successfully
 
